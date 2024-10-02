@@ -1,8 +1,9 @@
 from flask import Flask, request, render_template
 from model import rf_best
 import numpy as np
+import os
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder=os.path.join(os.path.pardir,'templates'))
 
 # Creating the routes
 @app.route('/predict',methods=['POST'])
@@ -42,7 +43,7 @@ def predict():
         return str(e)
      
     # Returning the function/Passing the form data to the template
-    return render_template('predict.html',prediction=result_message,)
+    return render_template('predict.html',prediction=result_message)
 
 @app.route('/')
 def home():
