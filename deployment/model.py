@@ -1,4 +1,9 @@
 
+import warnings
+warnings.filterwarnings('ignore')
+
+# The above two lines is to ignore the warning even after several correction of versions
+
 import joblib
 from sklearn.metrics import precision_score
 
