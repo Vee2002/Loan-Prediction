@@ -43,7 +43,7 @@ The model is trained using a publicly available dataset of historical loan appli
 
 ### **SETUP INSTRUCTIONS**
 1. **Clone the repository**:
-    git clone https://github.com/username/loan-prediction-system.git
+    git clone https://github.com/Vee2002/loan-prediction-system.git
    
 3. **Navigate to the project directory**:
    cd loan-prediction
